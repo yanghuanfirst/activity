@@ -7,6 +7,7 @@ class Index extends Base
     {
         //$a = getToken();
         $ticket = new Jsapi();
+        //这里是获取JSSDK需要的信息
         $sign_info = $ticket->getSign();
         $data['appId'] = config('param.appid');
         $data['timestamp'] = $sign_info['param']['timestamp'];
