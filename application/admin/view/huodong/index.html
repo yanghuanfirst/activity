@@ -67,9 +67,14 @@ function format(shijianchuo)
     return Y+M+D+h+m+s;
 }
 </script>
-<script id="createTime" type="text/html">
+<script id="startTime" type="text/html">
     {{#   
-       return format(parseInt(d.create_time) * 1000);
+       return format(parseInt(d.start_time) * 1000);
+    }} 
+</script>
+<script id="endTime" type="text/html">
+    {{#   
+       return format(parseInt(d.end_time) * 1000);
     }} 
 </script>
 <script id="toolbarDemo" type="text/html">

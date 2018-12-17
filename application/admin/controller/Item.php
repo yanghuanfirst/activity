@@ -16,14 +16,14 @@ class Item extends Error{
         $map = [];
         if($username)
         {
-            $map[] = ['activity_name','like','%'.$username.'%'];
+            $map[] = ['username','like','%'.$username.'%'];
         }
         $limit = input('limit/d',1);
         $page = input('page/d',1);
-        $data['data'] = db('Item')
+        $data['data'] = db('item')
                     ->alias('i')
-                    ->join('activity a','a.id=i.activity_id')
-                    ->field('i.id,a.activity_name,i.username,i.tel,i.item_img,i.title,i.create_time')
+                    ->join('huodong a','a.id=i.activity_id')
+                    ->field('i.id,a.activity_name,i.username,i.tel,i.item_img,i.title,i.create_time,i.sex')
                     ->where($map)
                     ->page($page)
                     ->limit($limit)
@@ -34,13 +34,17 @@ class Item extends Error{
             $v['item_img'] = $domain."/uploads/".$v['item_img'];
             $data['data'][$k] = $v;
         }
-        $data['count'] = db('activity')->where($map)->count();
+        $data['count'] = db('item')
+                        ->alias('i')
+                        ->join('huodong a','a.id=i.activity_id')
+                        ->where($map)
+                        ->count();
         $data['code'] = 0;
         return $data;
     }
     function add(){
         
-        $activity = db('activity')->field('id,activity_name')->where('status',2)->select();
+        $activity = db('huodong')->field('id,activity_name')->where('status',2)->select();
         $this->assign('activity',$activity);
         return $this->fetch();
     }
@@ -50,6 +54,13 @@ class Item extends Error{
         $validate = new \app\admin\validate\Itemv();
         if (!$validate->check($data)) {
             return ['code'=>-1,'msg'=>$validate->getError()];
+        }
+        $map[] = ['tel','eq',$data['tel']];
+        $map[] = ['activity_id','eq',$data['activity_id']];
+        $is_joined = db('item')->where($map)->field('id')->find();
+        if($is_joined)
+        {
+            return ['code'=>-1,'msg'=>'该手机号的用户已经参加过该活动，请勿重复添加'];
         }
         unset($data['logo_img']);
         $data['create_time'] = time();
@@ -69,7 +80,7 @@ class Item extends Error{
         {
           return $this->error('缺少参数');  
         }
-        $activity = db('activity')->field('id,activity_name')->where('status',2)->select();
+        $activity = db('huodong')->field('id,activity_name')->where('status',2)->select();
         $info = db('item')->find($id);
         $this->assign(compact('info','activity'));
         return $this->fetch();

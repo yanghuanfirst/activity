@@ -32,16 +32,16 @@ class Huodong extends Error{
     {
         $id = input('id/d',0);
         $status = input('status/d',1);
-//         if($status == 2)
-//         {
-//             $map[] = ['status','eq',2];
-//             $map[] = ['id','neq',$id];
-//             $have = db('huodong')->where($map)->find();
-//             if($have)
-//             {
-//                 return ['code'=>-1,'msg'=>'活动最多只能开启一个'];
-//             }
-//         }
+        if($status == 2)
+        {
+            $map[] = ['status','eq',2];
+            $map[] = ['id','neq',$id];
+            $have = db('huodong')->where($map)->find();
+            if($have)
+            {
+                return ['code'=>-1,'msg'=>'活动最多只能开启一个'];
+            }
+        }
         $data['id'] = $id;
         $data['status'] = $status;
         $res = db('huodong')->update($data);
@@ -64,12 +64,17 @@ class Huodong extends Error{
         $data = input('post.');
         $rule =   [
             'activity_name'  => 'require',
-            'yuyue_money'   => 'require',
+            //'yuyue_money'   => 'require',
+            'start_time'   => 'require|date|lt:end_time',
+            'end_time' => 'require|date|gt:start_time',
+            'activity_logo'=>'require',
             'desc'=>"require"
         ];
         $message  =   [
             'activity_name.require' => '活动名必须',
             'yuyue_money.require'     => '预约金额必须',
+            'start_time.lt'=>'开始时间必须小于结束时间',
+            'end_time.gt'=>'结束时间必须大于开始时间',
             'desc.require'     => '描述必须',
         ];
         $validate   = Validate::make($rule,$message);
@@ -77,14 +82,17 @@ class Huodong extends Error{
         if (!$validate->check($data)) {
             return ['code'=>-1,'msg'=>$validate->getError()];
         }
-//         if($data['status'] == 2){ 
-//             $map[] = ['status','eq',2];
-//             $have = db('huodong')->where($map)->value('id');
-//             if($have)
-//             {
-//                 return ['code'=>-1,'msg'=>'活动只能开启 一个'];
-//             }
-//         }
+        if($data['status'] == 2){ 
+            $map[] = ['status','eq',2];
+            $have = db('huodong')->where($map)->value('id');
+            if($have)
+            {
+                return ['code'=>-1,'msg'=>'活动只能开启 一个'];
+            }
+        }
+        unset($data['logo_img']);
+        $data['start_time'] = strtotime($data['start_time']);
+        $data['end_time'] = strtotime($data['end_time']);
         $data['create_time'] = time();
         $res = db('huodong')->insert($data);
         if($res)
@@ -136,19 +144,26 @@ class Huodong extends Error{
         $data = input('post.');
         $rule =   [
             'activity_name'  => 'require',
-            'yuyue_money'   => 'require',
-            'desc'=>"require"
+            //'yuyue_money'   => 'require',
+            'start_time'   => 'require|date|lt:end_time',
+            'end_time' => 'require|date|gt:start_time',
+            'desc'=>"require",
+            'activity_logo'=>'require',
         ];
         $message  =   [
             'activity_name.require' => '活动名必须',
             'yuyue_money.require'     => '预约金额必须',
+            'start_time.lt'=>'开始时间必须小于结束时间',
+            'end_time.gt'=>'结束时间必须大于开始时间',
             'desc.require'     => '描述必须',
         ];
         $validate   = Validate::make($rule,$message);
-    
         if (!$validate->check($data)) {
             return ['code'=>-1,'msg'=>$validate->getError()];
         }
+        $data['start_time'] = strtotime($data['start_time']);
+        $data['end_time'] = strtotime($data['end_time']);
+        unset($data['logo_img']);
         $res = db('huodong')->update($data);
         if($res)
         {

@@ -114,12 +114,12 @@ function wx_curl($url,$params=false,$ispost=0){
  * @param unknown $put_file_name 存入哪个文件名
  * @return multitype:number NULL
  */
-function upload($name,$put_file_name)
+function upload($name,$put_file_name,$size = 1024000,$ext = 'jpg,png')
 {
     // 获取表单上传文件 例如上传了001.jpg
     $file = request()->file($name);
     // 移动到框架应用根目录/uploads/ 目录下
-    $info = $file->move( 'uploads/'.$put_file_name);
+    $info = $file->validate(['size'=>$size,'ext'=>$ext])->move( 'uploads/'.$put_file_name);
     if($info){
         // 成功上传后 获取上传信息
         // 输出 jpg
@@ -132,7 +132,7 @@ function upload($name,$put_file_name)
     }else{
         // 上传失败获取错误信息
         //echo $file->getError();
-        return ['code'=>-1,'url'=>$file->getError()];
+        return ['code'=>-1,'msg'=>$file->getError()];
     }
 }
 

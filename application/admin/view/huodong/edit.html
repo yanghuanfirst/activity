@@ -23,11 +23,30 @@
     </div>
   </div>
   <div class="layui-form-item">
-    <label class="layui-form-label">预约金额</label>
+    <label class="layui-form-label">logo</label>
     <div class="layui-input-block">
-      <input type="text" value="{$info['yuyue_money']}" name="yuyue_money"  required  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+			<button type="button" class="layui-btn" id="logo-img-id">
+			  <i class="layui-icon">&#xe67c;</i>上传图片
+			</button>
+			<input type="hidden" name="activity_logo" value="{$info['activity_logo']}"/>
+    </div>
+    <label class="layui-form-label"></label>
+    <div class="logo-img">
+    	<img src="__UPLOAD__/{$info['activity_logo']}" style="width:100px;height:100px"/>
     </div>
   </div>
+  	<div class="layui-form-item">
+	    <label class="layui-form-label">开始时间</label>
+	    <div class="layui-input-block">
+	      <input type="text" value="{:date('Y-m-d H:i:s',$info['start_time'])}" name="start_time" id="start_time" required  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+	    </div>
+	  </div>
+	    <div class="layui-form-item">
+	    <label class="layui-form-label">结束时间</label>
+	    <div class="layui-input-block">
+	      <input type="text" value="{:date('Y-m-d H:i:s',$info['end_time'])}" name="end_time" id="end_time" required  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+	    </div>
+	  </div>
   <div class="layui-form-item">
     <label class="layui-form-label">状态</label>
     <div class="layui-input-block">
