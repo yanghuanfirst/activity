@@ -7,7 +7,6 @@ class Index extends Base
     
     public function index()
     {
-        $this->error('adf');die();
         $map[] = ['status','eq',2];
         //活动只能有一个开启的
         $activity = db('huodong')->where($map)->find();
