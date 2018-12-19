@@ -13,8 +13,9 @@ Route::get('think', function () {
     return 'hello,ThinkPHP5!';
 });
 
-Route::get('hello/:name', 'index/hello');
-
-return [
-
-];
+Route::rule('hello/:name', 'index/hello');
+//这里是活动页面和活动操作的路由组,activity是自定义的路由前缀，如果要生成activity/index的路由地址，需要用url('/activity/index',参数)第一个参数前面是加了/的
+// Route::group('activity', function () {
+//     Route::rule('index', 'admin/huodong/index');
+//     Route::rule('lists', 'admin/huodong/lists');
+// });
