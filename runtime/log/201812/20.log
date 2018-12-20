@@ -1,0 +1,1353 @@
+---------------------------------------------------------------
+[ 2018-12-20T14:19:33+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/index.html
+[运行时间：0.161881s] [吞吐率：6.18req/s] [内存消耗：1,966.90kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-20T14:19:33+08:00 ] 127.0.0.1 GET www.activity.com/admin/login/index.html
+[运行时间：0.045277s] [吞吐率：22.09req/s] [内存消耗：1,952.27kb] [文件加载：67]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\login\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:19:33+08:00 ] 127.0.0.1 GET www.activity.com/captcha.html?0.601093632539869
+[运行时间：0.037319s] [吞吐率：26.80req/s] [内存消耗：1,452.91kb] [文件加载：55]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  '0_601093632539869' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T14:19:40+08:00 ] 127.0.0.1 POST www.activity.com/admin/login/login.html
+[运行时间：0.071305s] [吞吐率：14.02req/s] [内存消耗：2,977.48kb] [文件加载：75]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.activity.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '39',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '888888',
+  'code' => 'ppw',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001608s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.008034s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tp_admin` WHERE  `name` = 'admin'  AND `password` = '21218cca77804d2ba1922c33e0151105' LIMIT 1 [ RunTime:0.000524s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:19:41+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.038572s] [吞吐率：25.93req/s] [内存消耗：1,959.61kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:19:41+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.044075s] [吞吐率：22.69req/s] [内存消耗：1,894.28kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-20T14:20:01+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/index.html
+[运行时间：0.037668s] [吞吐率：26.55req/s] [内存消耗：1,963.39kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:20:01+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/lists?page=1&limit=2
+[运行时间：0.064893s] [吞吐率：15.41req/s] [内存消耗：2,928.06kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/user/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001156s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.005759s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`province`,`addtime` FROM `tp_user` LIMIT 0,2 [ RunTime:0.000397s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000898s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1 [ RunTime:0.001336s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:21:40+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/index.html
+[运行时间：0.043943s] [吞吐率：22.76req/s] [内存消耗：1,963.39kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:21:41+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/lists?page=1&limit=2
+[运行时间：0.060773s] [吞吐率：16.45req/s] [内存消耗：2,928.06kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/user/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001294s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.001785s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`province`,`addtime` FROM `tp_user` LIMIT 0,2 [ RunTime:0.000418s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000804s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1 [ RunTime:0.000922s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:22:57+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/index.html
+[运行时间：0.040251s] [吞吐率：24.84req/s] [内存消耗：1,963.39kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:22:58+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/lists?page=1&limit=2
+[运行时间：0.055250s] [吞吐率：18.10req/s] [内存消耗：2,928.06kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/user/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001069s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.001652s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`province`,`addtime` FROM `tp_user` LIMIT 0,2 [ RunTime:0.000340s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000783s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1 [ RunTime:0.000963s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:24:33+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.049060s] [吞吐率：20.38req/s] [内存消耗：1,981.85kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:24:33+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/lists?page=1&limit=2
+[运行时间：0.067486s] [吞吐率：14.82req/s] [内存消耗：2,959.73kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/huodong/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000998s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.005061s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000470s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003402s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.001276s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:45+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/index.html
+[运行时间：0.050560s] [吞吐率：19.78req/s] [内存消耗：1,983.02kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\item\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:45+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/lists?page=1&limit=2
+[运行时间：0.066846s] [吞吐率：14.96req/s] [内存消耗：2,944.11kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/item/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001316s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.005205s ]
+[ sql ] [ SQL ] SELECT `i`.`id`,`a`.`activity_name`,`i`.`username`,`i`.`tel`,`i`.`item_img`,`i`.`title`,`i`.`create_time`,`i`.`sex` FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 0,2 [ RunTime:0.001283s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001008s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 1 [ RunTime:0.001889s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:36:57+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/index.html
+[运行时间：0.043965s] [吞吐率：22.75req/s] [内存消耗：1,963.39kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:36:57+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/lists?page=1&limit=2
+[运行时间：0.057172s] [吞吐率：17.49req/s] [内存消耗：2,928.06kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/user/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001261s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.001085s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`province`,`addtime` FROM `tp_user` LIMIT 0,2 [ RunTime:0.000469s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000851s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1 [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:36:59+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/index.html
+[运行时间：0.041715s] [吞吐率：23.97req/s] [内存消耗：1,963.39kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:37:00+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/lists?page=1&limit=2
+[运行时间：0.061203s] [吞吐率：16.34req/s] [内存消耗：2,928.06kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/user/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001035s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`province`,`addtime` FROM `tp_user` LIMIT 0,2 [ RunTime:0.000381s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002220s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1 [ RunTime:0.001202s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:45:13+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.049217s] [吞吐率：20.32req/s] [内存消耗：1,981.85kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:45:14+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/lists?page=1&limit=2
+[运行时间：0.059400s] [吞吐率：16.84req/s] [内存消耗：2,959.73kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/huodong/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002520s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001040s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000518s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000922s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.000853s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:36:29+08:00 ] 127.0.0.1 GET www.activity.com/index/Getuser/getUser?code=021oopnM19RLs71rTfpM1b9JnM1oopn0&state=%2F
+[运行时间：0.378959s] [吞吐率：2.64req/s] [内存消耗：2,902.95kb] [文件加载：73]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'code' => '021oopnM19RLs71rTfpM1b9JnM1oopn0',
+  'state' => '/',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009925s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.001754s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user` WHERE  `openid` = 'oydWg0dRUVqoPoaB0HaZ8PgHJSgU' LIMIT 1 [ RunTime:0.000810s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:36:30+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.775019s] [吞吐率：1.29req/s] [内存消耗：3,155.30kb] [文件加载：77]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=tl5ru3nosgietg15jvvcq9r563',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\localhost\activity\application\index\view\index\index.html [ array (
+  0 => 'zan',
+  1 => 'param',
+  2 => 'item',
+  3 => 'activity',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009836s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001473s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010597s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.001306s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_item` WHERE  `activity_id` = 1 [ RunTime:0.000490s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009759s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_huodong`  SET `view_num` = `view_num` + 1  WHERE  `id` = 1 [ RunTime:0.003785s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001889s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SELECT `item_id` FROM `tp_zan` WHERE  `user_id` = 5  AND `huodong_id` = 1  AND `create_time` BETWEEN 1545235200 AND 1545321600 [ RunTime:0.000765s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:36:35+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.035586s] [吞吐率：28.10req/s] [内存消耗：1,886.55kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-20T15:36:35+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.038803s] [吞吐率：25.77req/s] [内存消耗：1,887.21kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-20T15:36:37+08:00 ] 127.0.0.1 GET www.activity.com/index/Getuser/getUser?code=071vEjCV1GgWsY0Oc2AV1wUwCV1vEjCJ&state=%2F
+[运行时间：0.299642s] [吞吐率：3.34req/s] [内存消耗：2,903.70kb] [文件加载：73]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'code' => '071vEjCV1GgWsY0Oc2AV1wUwCV1vEjCJ',
+  'state' => '/',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010291s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.001497s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user` WHERE  `openid` = 'oydWg0dRUVqoPoaB0HaZ8PgHJSgU' LIMIT 1 [ RunTime:0.000775s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:36:37+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.081261s] [吞吐率：12.31req/s] [内存消耗：3,155.70kb] [文件加载：77]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\localhost\activity\application\index\view\index\index.html [ array (
+  0 => 'zan',
+  1 => 'param',
+  2 => 'item',
+  3 => 'activity',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000972s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011471s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_item` WHERE  `activity_id` = 1 [ RunTime:0.000416s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011541s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_huodong`  SET `view_num` = `view_num` + 1  WHERE  `id` = 1 [ RunTime:0.002006s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001041s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.001375s ]
+[ sql ] [ SQL ] SELECT `item_id` FROM `tp_zan` WHERE  `user_id` = 5  AND `huodong_id` = 1  AND `create_time` BETWEEN 1545235200 AND 1545321600 [ RunTime:0.000415s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:36:41+08:00 ] 127.0.0.1 GET www.activity.com/index/item/rank/activity_id/1.html
+[运行时间：0.053701s] [吞吐率：18.62req/s] [内存消耗：3,000.53kb] [文件加载：75]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\localhost\activity\application\index\view\item\rank.html [ array (
+  0 => 'color',
+  1 => 'activity',
+  2 => 'item',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001038s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.001358s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`zan_num` FROM `tp_item` WHERE  `activity_id` = 1 ORDER BY `zan_num` DESC LIMIT 10 [ RunTime:0.000453s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000760s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SELECT `id`,`end_time`,`activity_name` FROM `tp_huodong` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:36:44+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.063092s] [吞吐率：15.85req/s] [内存消耗：3,155.30kb] [文件加载：77]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\localhost\activity\application\index\view\index\index.html [ array (
+  0 => 'zan',
+  1 => 'param',
+  2 => 'item',
+  3 => 'activity',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000932s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001436s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000783s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001142s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.001722s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_item` WHERE  `activity_id` = 1 [ RunTime:0.000705s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000934s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_huodong`  SET `view_num` = `view_num` + 1  WHERE  `id` = 1 [ RunTime:0.002996s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000936s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.001475s ]
+[ sql ] [ SQL ] SELECT `item_id` FROM `tp_zan` WHERE  `user_id` = 5  AND `huodong_id` = 1  AND `create_time` BETWEEN 1545235200 AND 1545321600 [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:36:47+08:00 ] 127.0.0.1 POST www.activity.com/index/index/zan
+[运行时间：0.047671s] [吞吐率：20.98req/s] [内存消耗：2,884.07kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.activity.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '23',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '1',
+  'item_id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000982s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT `start_time`,`end_time`,`status` FROM `tp_huodong` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000391s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:36:49+08:00 ] 127.0.0.1 POST www.activity.com/index/index/zan
+[运行时间：0.057363s] [吞吐率：17.43req/s] [内存消耗：2,884.07kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.activity.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '23',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '1',
+  'item_id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011633s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT `start_time`,`end_time`,`status` FROM `tp_huodong` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:36:55+08:00 ] 127.0.0.1 POST www.activity.com/index/index/zan
+[运行时间：0.056980s] [吞吐率：17.55req/s] [内存消耗：2,884.07kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.activity.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '23',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '1',
+  'item_id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010612s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT `start_time`,`end_time`,`status` FROM `tp_huodong` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000348s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:37:12+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.075740s] [吞吐率：13.20req/s] [内存消耗：3,155.70kb] [文件加载：77]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\localhost\activity\application\index\view\index\index.html [ array (
+  0 => 'zan',
+  1 => 'param',
+  2 => 'item',
+  3 => 'activity',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000984s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000856s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001010s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.001369s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_item` WHERE  `activity_id` = 1 [ RunTime:0.000470s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009974s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_huodong`  SET `view_num` = `view_num` + 1  WHERE  `id` = 1 [ RunTime:0.002439s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001917s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.001516s ]
+[ sql ] [ SQL ] SELECT `item_id` FROM `tp_zan` WHERE  `user_id` = 5  AND `huodong_id` = 1  AND `create_time` BETWEEN 1545235200 AND 1545321600 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:37:12+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.067434s] [吞吐率：14.83req/s] [内存消耗：3,155.70kb] [文件加载：77]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\localhost\activity\application\index\view\index\index.html [ array (
+  0 => 'zan',
+  1 => 'param',
+  2 => 'item',
+  3 => 'activity',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001878s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001198s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000872s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.001294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_item` WHERE  `activity_id` = 1 [ RunTime:0.000389s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000722s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_huodong`  SET `view_num` = `view_num` + 1  WHERE  `id` = 1 [ RunTime:0.002066s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000712s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.001154s ]
+[ sql ] [ SQL ] SELECT `item_id` FROM `tp_zan` WHERE  `user_id` = 5  AND `huodong_id` = 1  AND `create_time` BETWEEN 1545235200 AND 1545321600 [ RunTime:0.000366s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:37:15+08:00 ] 127.0.0.1 POST www.activity.com/index/index/zan
+[运行时间：0.050380s] [吞吐率：19.85req/s] [内存消耗：2,884.07kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.activity.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '23',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '1',
+  'item_id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001008s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT `start_time`,`end_time`,`status` FROM `tp_huodong` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000358s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:37:17+08:00 ] 127.0.0.1 POST www.activity.com/index/index/zan
+[运行时间：0.054049s] [吞吐率：18.50req/s] [内存消耗：2,884.07kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.activity.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '23',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '1',
+  'item_id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002809s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001936s ]
+[ sql ] [ SQL ] SELECT `start_time`,`end_time`,`status` FROM `tp_huodong` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:37:18+08:00 ] 127.0.0.1 POST www.activity.com/index/index/zan
+[运行时间：0.058916s] [吞吐率：16.97req/s] [内存消耗：2,884.07kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.activity.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '23',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'activity_id' => '1',
+  'item_id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010900s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001324s ]
+[ sql ] [ SQL ] SELECT `start_time`,`end_time`,`status` FROM `tp_huodong` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000453s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:39:21+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.084914s] [吞吐率：11.78req/s] [内存消耗：3,155.70kb] [文件加载：77]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\localhost\activity\application\index\view\index\index.html [ array (
+  0 => 'zan',
+  1 => 'param',
+  2 => 'item',
+  3 => 'activity',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_item` WHERE  `activity_id` = 1 [ RunTime:0.000464s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010150s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_huodong`  SET `view_num` = `view_num` + 1  WHERE  `id` = 1 [ RunTime:0.002981s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001080s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT `item_id` FROM `tp_zan` WHERE  `user_id` = 5  AND `huodong_id` = 1  AND `create_time` BETWEEN 1545235200 AND 1545321600 [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:39:21+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.079636s] [吞吐率：12.56req/s] [内存消耗：3,155.70kb] [文件加载：77]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\localhost\activity\application\index\view\index\index.html [ array (
+  0 => 'zan',
+  1 => 'param',
+  2 => 'item',
+  3 => 'activity',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001024s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009825s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_item` WHERE  `activity_id` = 1 [ RunTime:0.000394s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000830s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_huodong`  SET `view_num` = `view_num` + 1  WHERE  `id` = 1 [ RunTime:0.002563s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001158s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.001468s ]
+[ sql ] [ SQL ] SELECT `item_id` FROM `tp_zan` WHERE  `user_id` = 5  AND `huodong_id` = 1  AND `create_time` BETWEEN 1545235200 AND 1545321600 [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:39:25+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.059736s] [吞吐率：16.74req/s] [内存消耗：3,155.70kb] [文件加载：77]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\localhost\activity\application\index\view\index\index.html [ array (
+  0 => 'zan',
+  1 => 'param',
+  2 => 'item',
+  3 => 'activity',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001075s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000597s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000989s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_item` WHERE  `activity_id` = 1 [ RunTime:0.000388s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000765s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_huodong`  SET `view_num` = `view_num` + 1  WHERE  `id` = 1 [ RunTime:0.001373s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000764s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT `item_id` FROM `tp_zan` WHERE  `user_id` = 5  AND `huodong_id` = 1  AND `create_time` BETWEEN 1545235200 AND 1545321600 [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:39:25+08:00 ] 127.0.0.1 GET www.activity.com/
+[运行时间：0.082546s] [吞吐率：12.11req/s] [内存消耗：3,155.70kb] [文件加载：77]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=0iphv8cifd89rmrp9gn6kpjl1p',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1811290 MicroMessenger/6.7.3 Language/zh_CN webview/15452666974945539 webdebugger port/56722',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\localhost\activity\application\index\view\index\index.html [ array (
+  0 => 'zan',
+  1 => 'param',
+  2 => 'item',
+  3 => 'activity',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` WHERE  `status` = 2 LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001411s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.001446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_item` WHERE  `activity_id` = 1 [ RunTime:0.000464s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001127s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_huodong`  SET `view_num` = `view_num` + 1  WHERE  `id` = 1 [ RunTime:0.002603s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011186s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_zan` [ RunTime:0.001387s ]
+[ sql ] [ SQL ] SELECT `item_id` FROM `tp_zan` WHERE  `user_id` = 5  AND `huodong_id` = 1  AND `create_time` BETWEEN 1545235200 AND 1545321600 [ RunTime:0.000709s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:59:21+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/index.html
+[运行时间：0.045067s] [吞吐率：22.19req/s] [内存消耗：1,963.39kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T15:59:22+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/lists?page=1&limit=2
+[运行时间：0.060750s] [吞吐率：16.46req/s] [内存消耗：2,928.06kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/user/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001219s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.001156s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`province`,`addtime` FROM `tp_user` LIMIT 0,2 [ RunTime:0.000876s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000951s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1 [ RunTime:0.000294s ]
+---------------------------------------------------------------
+[ 2018-12-20T15:59:47+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/index.html
+[运行时间：0.038907s] [吞吐率：25.70req/s] [内存消耗：1,963.39kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T15:59:48+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/lists?page=1&limit=2
+[运行时间：0.069290s] [吞吐率：14.43req/s] [内存消耗：2,928.06kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/user/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002034s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.001932s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`province`,`addtime` FROM `tp_user` LIMIT 0,2 [ RunTime:0.000580s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001088s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1 [ RunTime:0.001164s ]
+---------------------------------------------------------------
+[ 2018-12-20T16:07:24+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.048763s] [吞吐率：20.51req/s] [内存消耗：1,959.61kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T16:07:24+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.043383s] [吞吐率：23.05req/s] [内存消耗：1,894.28kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-20T16:07:25+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.044549s] [吞吐率：22.45req/s] [内存消耗：1,959.61kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T16:07:25+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.045456s] [吞吐率：22.00req/s] [内存消耗：1,894.28kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=a0lsdpb31mo5tpvikll4ie1vr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)

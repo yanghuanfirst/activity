@@ -1,0 +1,2112 @@
+---------------------------------------------------------------
+[ 2018-12-19T09:44:57+08:00 ] 127.0.0.1 GET www.activity.com/admin/Item/index
+[运行时间：0.080544s] [吞吐率：12.42req/s] [内存消耗：2,049.38kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T09:44:57+08:00 ] 127.0.0.1 GET www.activity.com/admin/login/index.html
+[运行时间：0.036251s] [吞吐率：27.59req/s] [内存消耗：1,951.94kb] [文件加载：67]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\login\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:44:57+08:00 ] 127.0.0.1 GET www.activity.com/captcha.html?0.650052787880715
+[运行时间：0.038020s] [吞吐率：26.30req/s] [内存消耗：1,452.57kb] [文件加载：55]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  '0_650052787880715' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-19T09:45:09+08:00 ] 127.0.0.1 POST www.activity.com/admin/login/login.html
+[运行时间：0.066114s] [吞吐率：15.13req/s] [内存消耗：2,976.75kb] [文件加载：75]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.activity.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '39',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '888888',
+  'code' => '8fe',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003751s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.004095s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `tp_admin` WHERE  `name` = 'admin'  AND `password` = '21218cca77804d2ba1922c33e0151105' LIMIT 1 [ RunTime:0.000546s ]
+---------------------------------------------------------------
+[ 2018-12-19T09:45:09+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.037022s] [吞吐率：27.01req/s] [内存消耗：1,959.21kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:45:09+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.040308s] [吞吐率：24.81req/s] [内存消耗：1,893.95kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T09:45:11+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.040706s] [吞吐率：24.57req/s] [内存消耗：1,981.52kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:45:11+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/lists?page=1&limit=2
+[运行时间：0.059145s] [吞吐率：16.91req/s] [内存消耗：2,959.36kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/huodong/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001434s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.002219s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000628s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001656s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.000693s ]
+---------------------------------------------------------------
+[ 2018-12-19T09:50:49+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.045659s] [吞吐率：21.90req/s] [内存消耗：1,961.75kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:50:49+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.042514s] [吞吐率：23.52req/s] [内存消耗：1,896.69kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T09:50:50+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.038977s] [吞吐率：25.66req/s] [内存消耗：1,983.73kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:50:50+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/lists?page=1&limit=2
+[运行时间：0.052371s] [吞吐率：19.09req/s] [内存消耗：2,961.58kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/huodong/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001300s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001128s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000448s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000863s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.000497s ]
+---------------------------------------------------------------
+[ 2018-12-19T09:50:51+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.038847s] [吞吐率：25.74req/s] [内存消耗：1,983.73kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:50:51+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/lists?page=1&limit=2
+[运行时间：0.068042s] [吞吐率：14.70req/s] [内存消耗：2,961.58kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/huodong/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010370s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000469s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.000491s ]
+---------------------------------------------------------------
+[ 2018-12-19T09:50:52+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.037659s] [吞吐率：26.55req/s] [内存消耗：1,983.73kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:50:52+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/lists?page=1&limit=2
+[运行时间：0.058147s] [吞吐率：17.20req/s] [内存消耗：2,961.58kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/huodong/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001123s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001062s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000566s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009839s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.000507s ]
+---------------------------------------------------------------
+[ 2018-12-19T09:50:52+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.038648s] [吞吐率：25.87req/s] [内存消耗：1,983.73kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:50:52+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/lists?page=1&limit=2
+[运行时间：0.058458s] [吞吐率：17.11req/s] [内存消耗：2,961.58kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/huodong/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001198s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000466s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010314s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.000448s ]
+---------------------------------------------------------------
+[ 2018-12-19T09:51:04+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.041666s] [吞吐率：24.00req/s] [内存消耗：1,961.75kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:51:04+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.043417s] [吞吐率：23.03req/s] [内存消耗：1,896.69kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T09:51:08+08:00 ] 127.0.0.1 GET www.activity.com/index
+[运行时间：0.045694s] [吞吐率：21.88req/s] [内存消耗：1,959.08kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'index',
+  'route' => 'admin/huodong/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:51:08+08:00 ] 127.0.0.1 GET www.activity.com/lists?page=1&limit=2
+[运行时间：0.032449s] [吞吐率：30.82req/s] [内存消耗：1,465.63kb] [文件加载：55]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-19T09:51:17+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.040255s] [吞吐率：24.84req/s] [内存消耗：1,961.35kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:51:17+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.043811s] [吞吐率：22.83req/s] [内存消耗：1,896.16kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T09:51:18+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.029446s] [吞吐率：33.96req/s] [内存消耗：1,443.44kb] [文件加载：54]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-19T09:52:07+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.044128s] [吞吐率：22.66req/s] [内存消耗：2,174.81kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:52:07+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.043250s] [吞吐率：23.12req/s] [内存消耗：1,896.69kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T09:52:11+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/index.html
+[运行时间：0.039491s] [吞吐率：25.32req/s] [内存消耗：1,965.27kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\user\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T09:52:11+08:00 ] 127.0.0.1 GET www.activity.com/admin/user/lists?page=1&limit=2
+[运行时间：0.051189s] [吞吐率：19.54req/s] [内存消耗：2,929.90kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/user/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001318s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.001246s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`province`,`addtime` FROM `tp_user` LIMIT 0,2 [ RunTime:0.000442s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000780s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2018-12-19T09:52:13+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.028000s] [吞吐率：35.71req/s] [内存消耗：1,443.44kb] [文件加载：54]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-19T10:07:57+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.047900s] [吞吐率：20.88req/s] [内存消耗：2,174.49kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:07:57+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.045277s] [吞吐率：22.09req/s] [内存消耗：1,896.16kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:07:59+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.027150s] [吞吐率：36.83req/s] [内存消耗：1,443.44kb] [文件加载：54]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-19T10:08:12+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.045041s] [吞吐率：22.20req/s] [内存消耗：1,962.15kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:08:12+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.038308s] [吞吐率：26.10req/s] [内存消耗：1,897.02kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:08:13+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.028150s] [吞吐率：35.52req/s] [内存消耗：1,443.77kb] [文件加载：54]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-19T10:09:37+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.042649s] [吞吐率：23.45req/s] [内存消耗：2,175.11kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:09:37+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.041718s] [吞吐率：23.97req/s] [内存消耗：1,897.02kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:09:38+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.039768s] [吞吐率：25.15req/s] [内存消耗：1,961.71kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:09:38+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.038328s] [吞吐率：26.09req/s] [内存消耗：1,896.50kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:10:03+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.048820s] [吞吐率：20.48req/s] [内存消耗：2,174.82kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:10:03+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.043666s] [吞吐率：22.90req/s] [内存消耗：1,896.53kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:10:04+08:00 ] 127.0.0.1 GET www.activity.com/admin/a/index.html
+[运行时间：0.040091s] [吞吐率：24.94req/s] [内存消耗：2,013.86kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [0]模板文件不存在:D:\localhost\activity\application\admin\view\public\error404.html[D:\localhost\activity\thinkphp\library\think\view\driver\Think.php:86]
+---------------------------------------------------------------
+[ 2018-12-19T10:10:35+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/index.html
+[运行时间：0.044658s] [吞吐率：22.39req/s] [内存消耗：1,985.27kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\item\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:10:35+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/lists?page=1&limit=2
+[运行时间：0.056335s] [吞吐率：17.75req/s] [内存消耗：2,946.30kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/item/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001224s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.001877s ]
+[ sql ] [ SQL ] SELECT `i`.`id`,`a`.`activity_name`,`i`.`username`,`i`.`tel`,`i`.`item_img`,`i`.`title`,`i`.`create_time`,`i`.`sex` FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 0,2 [ RunTime:0.000767s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000940s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 1 [ RunTime:0.000630s ]
+---------------------------------------------------------------
+[ 2018-12-19T10:10:35+08:00 ] 127.0.0.1 GET www.activity.com/admin/a/index.html
+[运行时间：0.041059s] [吞吐率：24.36req/s] [内存消耗：2,105.61kb] [文件加载：70]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\public\error404.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:10:35+08:00 ] 127.0.0.1 GET www.activity.com/admin/a/css/style.css
+[运行时间：0.041948s] [吞吐率：23.84req/s] [内存消耗：1,902.62kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/a/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\public\error404.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:10:42+08:00 ] 127.0.0.1 GET www.activity.com/admin/a/index.html
+[运行时间：0.034496s] [吞吐率：28.99req/s] [内存消耗：1,903.51kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\public\error404.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:10:42+08:00 ] 127.0.0.1 GET www.activity.com/admin/a/css/style.css
+[运行时间：0.038586s] [吞吐率：25.92req/s] [内存消耗：1,902.62kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/a/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\public\error404.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:13:43+08:00 ] 127.0.0.1 GET www.activity.com/admin/a/index.html
+[运行时间：0.043682s] [吞吐率：22.89req/s] [内存消耗：1,903.51kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\public\error404.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:13:43+08:00 ] 127.0.0.1 GET www.activity.com/admin/a/css/style.css
+[运行时间：0.039286s] [吞吐率：25.45req/s] [内存消耗：1,902.62kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/a/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\public\error404.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:13:44+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.046263s] [吞吐率：21.62req/s] [内存消耗：2,175.18kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:13:44+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.040622s] [吞吐率：24.62req/s] [内存消耗：1,897.05kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:13:45+08:00 ] 127.0.0.1 GET www.activity.com/a/index.html
+[运行时间：0.038169s] [吞吐率：26.20req/s] [内存消耗：1,959.57kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'a/index',
+  'route' => 'admin/huodong/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:13:46+08:00 ] 127.0.0.1 GET www.activity.com/a/lists?page=1&limit=2
+[运行时间：0.029907s] [吞吐率：33.44req/s] [内存消耗：1,466.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-19T10:16:15+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.047658s] [吞吐率：20.98req/s] [内存消耗：2,175.18kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:16:15+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.041386s] [吞吐率：24.16req/s] [内存消耗：1,897.05kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:16:16+08:00 ] 127.0.0.1 GET www.activity.com/a/index.html
+[运行时间：0.037942s] [吞吐率：26.36req/s] [内存消耗：1,959.57kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'a/index',
+  'route' => 'admin/huodong/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:16:16+08:00 ] 127.0.0.1 GET www.activity.com/a/lists?page=1&limit=2
+[运行时间：0.028815s] [吞吐率：34.70req/s] [内存消耗：1,466.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-19T10:37:22+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.045151s] [吞吐率：22.15req/s] [内存消耗：2,179.63kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:37:23+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.040271s] [吞吐率：24.83req/s] [内存消耗：1,901.51kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:37:24+08:00 ] 127.0.0.1 GET www.activity.com/activity/index.html
+[运行时间：0.039098s] [吞吐率：25.58req/s] [内存消耗：1,964.83kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'activity/index',
+  'route' => 'admin/huodong/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:37:24+08:00 ] 127.0.0.1 GET www.activity.com/activity/lists?page=1&limit=2
+[运行时间：0.037625s] [吞吐率：26.58req/s] [内存消耗：1,880.49kb] [文件加载：65]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'activity/<name>',
+  'route' => 'blog/read',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'name' => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/activity/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+  'name' => 'lists',
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:38:30+08:00 ] 127.0.0.1 GET www.activity.com/activity/index.html
+[运行时间：0.040995s] [吞吐率：24.39req/s] [内存消耗：1,964.01kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'activity/index',
+  'route' => 'admin/huodong/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:38:30+08:00 ] 127.0.0.1 GET www.activity.com/activity/lists?page=1&limit=2
+[运行时间：0.042052s] [吞吐率：23.78req/s] [内存消耗：1,969.13kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'activity/lists',
+  'route' => 'admin/huodong/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/activity/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:39:00+08:00 ] 127.0.0.1 GET www.activity.com/activity/index.html
+[运行时间：0.044155s] [吞吐率：22.65req/s] [内存消耗：1,964.42kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'activity/index',
+  'route' => 'admin/huodong/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:39:00+08:00 ] 127.0.0.1 GET www.activity.com/activity/lists?page=1&limit=2
+[运行时间：0.055590s] [吞吐率：17.99req/s] [内存消耗：2,942.59kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'activity/lists',
+  'route' => 'admin/huodong/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/activity/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003046s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001393s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000521s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000964s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.000493s ]
+---------------------------------------------------------------
+[ 2018-12-19T10:39:08+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/add.html
+[运行时间：0.041779s] [吞吐率：23.94req/s] [内存消耗：1,934.09kb] [文件加载：67]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/activity/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\add.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:39:10+08:00 ] 127.0.0.1 GET www.activity.com/activity/index.html
+[运行时间：0.039918s] [吞吐率：25.05req/s] [内存消耗：1,964.42kb] [文件加载：68]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'activity/index',
+  'route' => 'admin/huodong/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:39:10+08:00 ] 127.0.0.1 GET www.activity.com/activity/lists?page=1&limit=2
+[运行时间：0.064609s] [吞吐率：15.48req/s] [内存消耗：2,942.59kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'activity/lists',
+  'route' => 'admin/huodong/lists',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/activity/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001494s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001329s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000419s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010326s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.000474s ]
+---------------------------------------------------------------
+[ 2018-12-19T10:40:44+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.054452s] [吞吐率：18.36req/s] [内存消耗：2,179.23kb] [文件加载：71]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:40:44+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.041702s] [吞吐率：23.98req/s] [内存消耗：1,901.10kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:40:45+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.031546s] [吞吐率：31.70req/s] [内存消耗：1,447.85kb] [文件加载：54]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-19T10:40:52+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.044342s] [吞吐率：22.55req/s] [内存消耗：1,959.61kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\index\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:40:52+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/blank.html
+[运行时间：0.041785s] [吞吐率：23.93req/s] [内存消耗：1,894.28kb] [文件加载：66]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T10:40:53+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.044249s] [吞吐率：22.60req/s] [内存消耗：1,981.85kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:40:53+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/lists?page=1&limit=2
+[运行时间：0.056973s] [吞吐率：17.55req/s] [内存消耗：2,959.70kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/huodong/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001175s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001092s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000403s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001109s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[ 2018-12-19T10:40:55+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/index.html
+[运行时间：0.041978s] [吞吐率：23.82req/s] [内存消耗：1,983.02kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\item\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:40:55+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/lists?page=1&limit=2
+[运行时间：0.058131s] [吞吐率：17.20req/s] [内存消耗：2,944.05kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/item/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001796s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.001282s ]
+[ sql ] [ SQL ] SELECT `i`.`id`,`a`.`activity_name`,`i`.`username`,`i`.`tel`,`i`.`item_img`,`i`.`title`,`i`.`create_time`,`i`.`sex` FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 0,2 [ RunTime:0.000754s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000949s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 1 [ RunTime:0.000598s ]
+---------------------------------------------------------------
+[ 2018-12-19T10:40:56+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/index.html
+[运行时间：0.042252s] [吞吐率：23.67req/s] [内存消耗：1,981.85kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\huodong\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:40:56+08:00 ] 127.0.0.1 GET www.activity.com/admin/huodong/lists?page=1&limit=2
+[运行时间：0.055013s] [吞吐率：18.18req/s] [内存消耗：2,959.70kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/huodong/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001011s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_huodong` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_huodong` LIMIT 0,2 [ RunTime:0.000438s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000848s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_huodong` LIMIT 1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[ 2018-12-19T10:40:56+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/index.html
+[运行时间：0.040574s] [吞吐率：24.65req/s] [内存消耗：1,983.02kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\item\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:40:56+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/lists?page=1&limit=2
+[运行时间：0.067705s] [吞吐率：14.77req/s] [内存消耗：2,944.05kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/item/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001275s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT `i`.`id`,`a`.`activity_name`,`i`.`username`,`i`.`tel`,`i`.`item_img`,`i`.`title`,`i`.`create_time`,`i`.`sex` FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 0,2 [ RunTime:0.001236s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010563s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 1 [ RunTime:0.000614s ]
+---------------------------------------------------------------
+[ 2018-12-19T10:41:02+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/index.html
+[运行时间：0.041256s] [吞吐率：24.24req/s] [内存消耗：1,983.02kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\item\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:41:02+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/lists?page=1&limit=2
+[运行时间：0.054110s] [吞吐率：18.48req/s] [内存消耗：2,944.05kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/item/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001120s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.001637s ]
+[ sql ] [ SQL ] SELECT `i`.`id`,`a`.`activity_name`,`i`.`username`,`i`.`tel`,`i`.`item_img`,`i`.`title`,`i`.`create_time`,`i`.`sex` FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 0,2 [ RunTime:0.000555s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001044s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 1 [ RunTime:0.000735s ]
+---------------------------------------------------------------
+[ 2018-12-19T10:41:04+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/index.html
+[运行时间：0.043580s] [吞吐率：22.95req/s] [内存消耗：1,983.02kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\item\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:41:04+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/lists?page=1&limit=2
+[运行时间：0.055385s] [吞吐率：18.06req/s] [内存消耗：2,944.05kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/item/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000964s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT `i`.`id`,`a`.`activity_name`,`i`.`username`,`i`.`tel`,`i`.`item_img`,`i`.`title`,`i`.`create_time`,`i`.`sex` FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 0,2 [ RunTime:0.000394s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 1 [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2018-12-19T10:41:12+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/index.html
+[运行时间：0.040446s] [吞吐率：24.72req/s] [内存消耗：1,983.02kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\item\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T10:41:12+08:00 ] 127.0.0.1 GET www.activity.com/admin/item/lists?page=1&limit=2
+[运行时间：0.067246s] [吞吐率：14.87req/s] [内存消耗：2,944.05kb] [文件加载：72]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1966599168; PHPSESSID=4urce1o7mnikr9khnjdin87qpd',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.activity.com/admin/item/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001105s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_item` [ RunTime:0.001254s ]
+[ sql ] [ SQL ] SELECT `i`.`id`,`a`.`activity_name`,`i`.`username`,`i`.`tel`,`i`.`item_img`,`i`.`title`,`i`.`create_time`,`i`.`sex` FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 0,2 [ RunTime:0.000633s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010682s ] mysql:host=127.0.0.1;dbname=activity;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_item` `i` INNER JOIN `tp_huodong` `a` ON `a`.`id`=`i`.`activity_id` LIMIT 1 [ RunTime:0.000594s ]
+---------------------------------------------------------------
+[ 2018-12-19T16:54:17+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.086334s] [吞吐率：11.58req/s] [内存消耗：1,959.27kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.activity.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.4.0',
+  'postman-token' => 'e6d5c446-ab6a-4d88-a42a-2911aa95a895',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T16:54:18+08:00 ] 127.0.0.1 GET www.activity.com/admin/login/index.html
+[运行时间：0.039009s] [吞吐率：25.64req/s] [内存消耗：1,952.12kb] [文件加载：67]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=5astnaloccbi32hb0lp1brmuo9',
+  'host' => 'www.activity.com',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.4.0',
+  'postman-token' => 'e6d5c446-ab6a-4d88-a42a-2911aa95a895',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\login\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T16:54:50+08:00 ] 127.0.0.1 POST www.activity.com/admin/index/index.html
+[运行时间：0.041886s] [吞吐率：23.87req/s] [内存消耗：1,958.64kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=5astnaloccbi32hb0lp1brmuo9',
+  'host' => 'www.activity.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.4.0',
+  'postman-token' => 'c6a481e3-47a7-442e-898d-46ca01e70d82',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T16:54:50+08:00 ] 127.0.0.1 GET www.activity.com/admin/login/index.html
+[运行时间：0.034059s] [吞吐率：29.36req/s] [内存消耗：1,952.12kb] [文件加载：67]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=5astnaloccbi32hb0lp1brmuo9',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.4.0',
+  'postman-token' => 'c6a481e3-47a7-442e-898d-46ca01e70d82',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\login\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-19T16:54:54+08:00 ] 127.0.0.1 GET www.activity.com/admin/index/index.html
+[运行时间：0.040229s] [吞吐率：24.86req/s] [内存消耗：1,959.43kb] [文件加载：69]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=5astnaloccbi32hb0lp1brmuo9',
+  'host' => 'www.activity.com',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.4.0',
+  'postman-token' => '539d7c0e-aa39-4fb9-a8c9-2d1d9b642675',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-19T16:54:54+08:00 ] 127.0.0.1 GET www.activity.com/admin/login/index.html
+[运行时间：0.034366s] [吞吐率：29.10req/s] [内存消耗：1,952.12kb] [文件加载：67]
+[ info ] [ LANG ] D:\localhost\activity\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'www.activity.com',
+  'referer' => 'http://www.activity.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=5astnaloccbi32hb0lp1brmuo9',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.4.0',
+  'postman-token' => '539d7c0e-aa39-4fb9-a8c9-2d1d9b642675',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\localhost\activity\application\admin\view\login\index.html [ array (
+) ]
